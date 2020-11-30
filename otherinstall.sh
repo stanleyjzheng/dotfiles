@@ -1,21 +1,4 @@
-echo installing, make sure this is run with sudo
-apt -qq update 
-apt -q --yes --force-yes install gnome-tweak-tool
-apt -q --yes --force-yes install adb
-apt -q --yes --force-yes install alacritty
-apt -q --yes --force-yes install code
-apt -q --yes --force-yes install atom
-apt -q --yes --force-yes install texlive-full
-apt -q --yes --force-yes install pdftk
-apt -q --yes --force-yes install lm-sensors
-apt -q --yes --force-yes install micro
-apt -q --yes --force-yes install obs-studio
-apt -q --yes --force-yes install sl
-apt -q --yes --force-yes install tmux
-apt -q --yes --force-yes install v4l2loopback-dkms
-apt -q --yes --force-yes install vlc
-apt -q --yes --force-yes install zsh
-
+#!/bin/bash
 
 # spotify
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
@@ -53,12 +36,11 @@ wget -O anaconda.sh "https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x
 chmod 777 anaconda sh && ./anaconda.sh 
 rm -f anaconda.sh
 
+# zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # droidcam
 cd /tmp/
 wget https://files.dev47apps.net/linux/droidcam_latest.zip
 unzip droidcam_latest.zip -d droidcam
 cd droidcam && sudo ./install-client && sudo ./install-video
-
-# zsh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
