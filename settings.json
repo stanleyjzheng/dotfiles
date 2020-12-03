@@ -1,0 +1,103 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "monospace, 'Ubuntu'",
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "editor.tokenColorCustomizations": {
+        "comments": "#6d7a96"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "python.formatting.provider": "black",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.languageServer": "None",
+    "files.autoSave": "afterDelay",
+    "latex-workshop.viewer.pdf.internal.keyboardEvent": "force",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.hover.preview.enabled": false,
+    "latex-workshop.latex.rootFile.doNotPrompt": true,
+    "latex-workshop.latex.recipes": [
+
+        {
+            "name": "latexmk 🔃",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "latexmk (latexmkrc)",
+            "tools": [
+                "latexmk_rconly"
+            ]
+        },
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "Compile Rnw files",
+            "tools": [
+                "rnw2tex",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Compile Jnw files",
+            "tools": [
+                "jnw2tex",
+                "latexmk"
+            ]
+        }
+    ],
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "cSpell.enableFiletypes": [
+        "!python"
+    ],
+    "cSpell.userWords": [
+        "COVID",
+        "Dicom",
+        "Invictus",
+        "Kaggle",
+        "Leontief",
+        "MOOC's",
+        "Pytorch",
+        "Zheng",
+        "bloodlust",
+        "cuda",
+        "efficientnet",
+        "multilabel",
+        "relatability"
+    ],
+    "editor.cursorBlinking": "solid",
+    "python.condaPath": "/home/stanleyzheng/anaconda3/bin/",
+    "workbench.colorTheme": "Nord",
+    "indentRainbow.ignoreLinePatterns": [
+
+        "/[ \t]* [*]/g",
+        "/[ \t]+[/]{2}/g"
+    ],
+    "python.defaultInterpreterPath": "/home/stanleyzheng/anaconda3/bin/python",
+    "cSpell.checkLimit": 5000,
+    "editor.tabCompletion": "onlySnippets",
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.sendSelectionToInteractiveWindow": false,
+    "jupyter.askForKernelRestart": false,
+    "terminal.integrated.automationShell.linux": "",
+    "editor.codeActionsOnSave": null
+}

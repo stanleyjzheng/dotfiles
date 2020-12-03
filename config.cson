@@ -1,0 +1,31 @@
+"*":
+  "atom-latex":
+    clean_after_build: true
+    hide_log_if_success: true
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "nord-atom-ui"
+      "nord-atom-syntax"
+    ]
+    useTreeSitterParsers: false
+  editor:
+    fontSize: 18
+    tabLength: 4
+  "exception-reporting":
+    userId: "8a777cf7-2210-4f69-9425-54584d319fd3"
+  kite:
+    showWelcomeNotificationOnStartup: false
+  latex: {}
+  latextools:
+    citeAutoTrigger: false
+    forwardSync: false
+    keepFocus: false
+    refAutoTrigger: false
+  "nord-atom-syntax":
+    accessibility:
+      commentContrast: 20
+  "nord-atom-ui":
+    darkerFormFocusEffect: true
+  welcome:
+    showOnStartup: false
