@@ -34,7 +34,7 @@ bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
 
 # anaconda
 wget -O anaconda.sh "https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh"
-chmod 777 anaconda sh && ./anaconda.sh 
+chmod 777 anaconda.sh && ./anaconda.sh 
 rm -f anaconda.sh
 
 # zsh
