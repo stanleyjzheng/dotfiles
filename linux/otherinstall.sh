@@ -16,15 +16,8 @@ rm -rf spotify-adblock-linux
 
 # discord
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-sudo dpkg -qq -i discord.deb 
+dpkg -i discord.deb 
 rm -f discord.deb 
-
-# powerline fonts
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts 
-./install.sh
-cd .. 
-rm -rf fonts
 
 # heroku cli
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
@@ -35,7 +28,6 @@ bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)"
 # anaconda
 wget -O anaconda.sh "https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh"
 chmod 777 anaconda.sh && ./anaconda.sh 
-rm -f anaconda.sh
 
 # zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
