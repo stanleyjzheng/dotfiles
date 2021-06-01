@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/home/stanleyzheng/anaconda3/bin:/home/stanleyzheng/anaconda3/bin:/home/stanleyzheng/anaconda3/condabin:/home/stanleyzheng/.local/bin:/home/stanleyzheng/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/cuda/bin
+export PATH=/home/stanleyzheng/anaconda3/bin:/home/stanleyzheng/anaconda3/bin:/home/stanleyzheng/anaconda3/condabin:/home/stanleyzheng/.local/bin:/home/stanleyzheng/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/cuda/bin:/usr/local/bin
 
 plugins=(git
 adb
@@ -14,6 +14,7 @@ systemd
 tmux
 ubuntu
 vscode
+zsh-autosuggestions
 )
 
 # Path to your oh-my-zsh installation.
@@ -115,6 +116,8 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias open='xdg-open'
+alias java8='/usr/lib/jvm/java-8-openjdk-amd64/bin/java'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -131,7 +134,7 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/stanleyzheng/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/stanleyzheng/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -144,4 +147,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH=~/anaconda3/bin:$PATH
+# export PATH=~/anaconda3/bin:$PATH
